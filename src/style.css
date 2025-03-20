@@ -1,5 +1,39 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
-    background: white;
+body {
+    background: rgb(235, 157, 235);
+    display: flex;
+    justify-content: center;  
+    align-items: center;     
+    height: 100vh;            
+    flex-direction: column;   
+}
+
+#tablero {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
+    gap: 5px;
+    justify-content: center;
+    width: 40%;
+    height: 40%;
+    margin-bottom: 15%;
+}
+
+.casilla {
+    font-size: 5em;
+    color: purple;
+    border: 5px solid #3bce9d;
+    cursor: pointer;
+}
+
+#reset {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 30px;
+    background-color: purple;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 100px;
 }
